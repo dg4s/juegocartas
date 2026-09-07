@@ -10,7 +10,7 @@
 | **Estado general** | Fase 3 en GitHub. Paquete NAS corregido (transferencia manual, sin build en NAS). Caddy/DuckDNS sin cambios. |
 | **Código** | `C:\Dev\juegocartas\numero-flash\` |
 | **Producto** | **NÚMERO FLASH** · slug `numero-flash` (DEC-051) |
-| **Último commit en GitHub** | `673d8b9` (2026-09-07) |
+| **Último commit en GitHub** | `07b1a54` (2026-09-07) |
 | **Rama / remote** | `main` · `origin` = `https://github.com/dg4s/juegocartas.git` |
 
 ## Registro de avance
