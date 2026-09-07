@@ -1,16 +1,16 @@
 # NÚMERO FLASH — Estado del Proyecto
 
-**Última actualización:** 2026-09-06 20:30 (paquete NAS generado)
+**Última actualización:** 2026-09-07 (corrección docs paquete NAS)
 
 ## Fase actual
 
 | Campo | Valor |
 |-------|-------|
 | **Fase** | 3 — Implementación local **cerrada** + IDLE alineado al mock v0 |
-| **Estado general** | Fase 3 en GitHub. Footer dg4s + paquete NAS incluidos en este commit. NAS/Caddy/DuckDNS sin cambios. |
+| **Estado general** | Fase 3 en GitHub. Paquete NAS corregido (transferencia manual, sin build en NAS). Caddy/DuckDNS sin cambios. |
 | **Código** | `C:\Dev\juegocartas\numero-flash\` |
 | **Producto** | **NÚMERO FLASH** · slug `numero-flash` (DEC-051) |
-| **Último commit en GitHub** | `9004058` (2026-09-06 19:37) |
+| **Último commit en GitHub** | `42c3efc` (2026-09-07) |
 | **Rama / remote** | `main` · `origin` = `https://github.com/dg4s/juegocartas.git` |
 
 ## Registro de avance
@@ -33,8 +33,9 @@
 | 2026-09-06 19:37 | Commit/push Fase 3 + DEC-051/052 → GitHub (`9004058`) | Completada |
 | 2026-09-06 19:59 | Footer global: dg4s.site + © 2026 dg4s | Completada (local; sin commit) |
 | 2026-09-06 20:30 | Rebuild Docker + TAR + carpeta `nas-deploy/` para TerraMaster | Completada |
-| — | Commit/push footer + paquete NAS | Este commit |
-| — | Carga en TerraMaster / Caddy / DuckDNS | Pendiente; no tocar |
+| 2026-09-06 20:35 | Commit/push footer + paquete NAS (`3b3a70f`) | Completada |
+| 2026-09-07 | Corrección docs `nas-deploy/` + commit/push (`42c3efc`) | Completada |
+| — | Transferencia manual TAR + compose al TerraMaster | Pendiente |
 
 ## Verificación local (2026-09-06 19:25)
 
@@ -92,10 +93,24 @@ Flujo comprobado en el contenedor (RETO): niveles, SONIDO ON/OFF, INICIAR → CO
 1. `RULES.md` sigue diciendo «prohibido programar» / «no crear Dockerfile» pese a Fase 3 cerrada.
 2. Copy decorativo («Mejora», «HABILIDADES PARA MAÑANA», «Con atención también se aprende») vs DEC-025.
 
+## Paquete NAS (2026-09-07)
+
+`nas-deploy/` listo para transferencia manual al TerraMaster:
+
+| Archivo | Notas |
+|---------|-------|
+| `numero-flash-image.tar` | Imagen `numero-flash:latest` (~23 MB; local, gitignored) |
+| `docker-compose.yml` | Solo `image:`; **sin** `build:` |
+| `INSTALACION-NAS.md` | File Manager → Container Station import → compose |
+| `README.md` | Resumen; despliegue vs. fase futura Caddy/DuckDNS |
+
+Flujo: PC Windows → interfaz de archivos TerraMaster → importar TAR → levantar compose. **No** SSH para subir archivos. **No** build ni código fuente en el NAS.
+
 ## Siguiente paso
 
-1. Transferencia manual del TAR al NAS (`nas-deploy/`).
-2. Pruebas en TerraMaster.
+1. Transferencia manual de `nas-deploy/` (TAR + compose) al TerraMaster.
+2. Importar imagen y levantar contenedor en Container Station.
+3. Caddy/DuckDNS (fase posterior, vía SSH).
 
 ## Restricciones activas
 

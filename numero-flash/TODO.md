@@ -1,6 +1,6 @@
 # NÚMERO FLASH — Tareas Pendientes
 
-**Última actualización:** 2026-09-06 19:59 (footer dg4s.site)
+**Última actualización:** 2026-09-07 (corrección docs paquete NAS)
 
 ## Fase 0 — Preparación (completada)
 
@@ -96,10 +96,10 @@
 ## Fase 5 — NAS (artefactos listos; transferencia manual)
 
 - [x] Generar `numero-flash-image.tar` + `nas-deploy/` (compose, instrucciones)
-- [ ] Transferencia manual y `docker load`
+- [x] Corregir docs NAS: transferencia manual TerraMaster, sin SSH/build (`INSTALACION-NAS.md`, `README.md`)
+- [ ] Transferencia manual al TerraMaster e importación en Container Station
 - [ ] Pruebas en TerraMaster
-- [ ] Docs de instalación y rollback
-- [ ] Caddy/DuckDNS post-auditoría
+- [ ] Caddy/DuckDNS post-auditoría (SSH; fase posterior)
 - [ ] Verificar `https://juegocartaspwa.duckdns.org`
 
 ## Verificaciones de puerto

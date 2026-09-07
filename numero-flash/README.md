@@ -4,7 +4,7 @@ PWA educativa de cartas: el adulto opera la app; el niño reconstruye un número
 
 ## Estado
 
-**Fase 3 — Implementación local cerrada** (2026-09-06). Paquete NAS en `nas-deploy/`; TAR local (`*.tar` excluido de Git).
+**Fase 3 — Implementación local cerrada** (2026-09-06). GitHub `42c3efc`. Paquete NAS en `nas-deploy/` (transferencia manual TerraMaster; TAR local, gitignored).
 
 > Nombre histórico del proyecto: MONTEO NÚMERO (DEC-001). Identidad operativa vigente: **NÚMERO FLASH** (DEC-051).
 
@@ -67,4 +67,5 @@ docker compose up --build
 
 ## Pendiente
 
-- Transferencia manual de `numero-flash-image.tar` al NAS (generar con `docker save`; ver `nas-deploy/`)
+- Transferencia manual de `nas-deploy/` al TerraMaster (TAR + compose; ver `INSTALACION-NAS.md`)
+- Caddy/DuckDNS (fase posterior, vía SSH)

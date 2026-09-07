@@ -88,7 +88,7 @@ C:\Dev\juegocartas\numero-flash
 
 ## Despliegue
 
-Manual al NAS: `docker save` → transferencia → `docker load`. Sin descompresión automática del proyecto.
+Manual al NAS: `docker save` en PC → transferencia por **interfaz de archivos del TerraMaster** → importar TAR en Container Station → levantar con `nas-deploy/docker-compose.yml` (sin build ni código fuente en el NAS). Ver `nas-deploy/INSTALACION-NAS.md`.
 
 ## Puertos
 
@@ -99,9 +99,9 @@ Manual al NAS: `docker save` → transferencia → `docker load`. Sin descompres
 
 ## Fase actual
 
-**Fase 3 — Implementación local cerrada y publicada en GitHub** (`9004058`). IDLE mock v0; señal **GO** (DEC-052); footer dg4s.site (2026-09-06 19:59, local sin commit). NAS/Caddy/DuckDNS sin cambios.
+**Fase 3 — Implementación local cerrada y publicada en GitHub** (`42c3efc`). Paquete NAS en `nas-deploy/` corregido para transferencia manual (File Manager + Container Station; sin SSH ni build en NAS). Caddy/DuckDNS sin cambios.
 
-**Último registro de avance:** 2026-09-06 19:59.
+**Último registro de avance:** 2026-09-07.
 
 ## Documentos de continuidad
 
