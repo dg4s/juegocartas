@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+docs
+*.tar
+_vite_scaffold
+*.md
+!package.json

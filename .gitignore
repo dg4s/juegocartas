@@ -2,6 +2,8 @@
 .env.*
 !.env.example
 node_modules/
+dist/
+_vite_scaffold/
 *.tar
 *.log
 .DS_Store
