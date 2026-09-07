@@ -99,7 +99,7 @@ Manual al NAS: `docker save` en PC → transferencia por **interfaz de archivos 
 
 ## Fase actual
 
-**Fase 3 — Implementación local cerrada y publicada en GitHub** (`42c3efc`). Paquete NAS en `nas-deploy/` corregido para transferencia manual (File Manager + Container Station; sin SSH ni build en NAS). Caddy/DuckDNS sin cambios.
+**Fase 3 — Implementación local cerrada y publicada en GitHub** (`673d8b9`). Paquete NAS en `nas-deploy/` corregido para transferencia manual (File Manager + Container Station; sin SSH ni build en NAS). Caddy/DuckDNS sin cambios.
 
 **Último registro de avance:** 2026-09-07.
 

@@ -4,7 +4,7 @@ PWA educativa de cartas: el adulto opera la app; el niño reconstruye un número
 
 ## Estado
 
-**Fase 3 — Implementación local cerrada** (2026-09-06). GitHub `42c3efc`. Paquete NAS en `nas-deploy/` (transferencia manual TerraMaster; TAR local, gitignored).
+**Fase 3 — Implementación local cerrada** (2026-09-06). GitHub `673d8b9`. Paquete NAS en `nas-deploy/` (transferencia manual TerraMaster; TAR local, gitignored).
 
 > Nombre histórico del proyecto: MONTEO NÚMERO (DEC-001). Identidad operativa vigente: **NÚMERO FLASH** (DEC-051).
 

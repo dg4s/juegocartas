@@ -10,7 +10,7 @@
 | **Estado general** | Fase 3 en GitHub. Paquete NAS corregido (transferencia manual, sin build en NAS). Caddy/DuckDNS sin cambios. |
 | **Código** | `C:\Dev\juegocartas\numero-flash\` |
 | **Producto** | **NÚMERO FLASH** · slug `numero-flash` (DEC-051) |
-| **Último commit en GitHub** | `42c3efc` (2026-09-07) |
+| **Último commit en GitHub** | `673d8b9` (2026-09-07) |
 | **Rama / remote** | `main` · `origin` = `https://github.com/dg4s/juegocartas.git` |
 
 ## Registro de avance
@@ -34,7 +34,7 @@
 | 2026-09-06 19:59 | Footer global: dg4s.site + © 2026 dg4s | Completada (local; sin commit) |
 | 2026-09-06 20:30 | Rebuild Docker + TAR + carpeta `nas-deploy/` para TerraMaster | Completada |
 | 2026-09-06 20:35 | Commit/push footer + paquete NAS (`3b3a70f`) | Completada |
-| 2026-09-07 | Corrección docs `nas-deploy/` + commit/push (`42c3efc`) | Completada |
+| 2026-09-07 | Corrección docs `nas-deploy/` + commit/push (`673d8b9`) | Completada |
 | — | Transferencia manual TAR + compose al TerraMaster | Pendiente |
 
 ## Verificación local (2026-09-06 19:25)
