@@ -99,9 +99,9 @@ Manual al NAS: `docker save` → transferencia → `docker load`. Sin descompres
 
 ## Fase actual
 
-**Fase 3 — Implementación local cerrada y publicada en GitHub** (PWA + Docker + DEC-051/052). IDLE con mock v0 (`home-scene.png`); señal de arranque **GO**. Commit/push 2026-09-06 19:37. NAS/Caddy/DuckDNS sin cambios.
+**Fase 3 — Implementación local cerrada y publicada en GitHub** (`9004058`). IDLE mock v0; señal **GO** (DEC-052); footer dg4s.site (2026-09-06 19:59, local sin commit). NAS/Caddy/DuckDNS sin cambios.
 
-**Último registro de avance:** 2026-09-06 19:37.
+**Último registro de avance:** 2026-09-06 19:59.
 
 ## Documentos de continuidad
 

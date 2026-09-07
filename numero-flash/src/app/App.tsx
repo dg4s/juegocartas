@@ -64,6 +64,21 @@ function LiveRegion({ phase, state }: { phase: string; state: ReturnType<typeof 
   )
 }
 
+function AppFooter() {
+  return (
+    <footer className="app-footer">
+      <p>
+        Sistema desarrollado por{' '}
+        <a href="https://dg4s.site" target="_blank" rel="noopener noreferrer">
+          dg4s.site
+        </a>
+        {' '}
+        | © 2026 dg4s. Todos los derechos reservados
+      </p>
+    </footer>
+  )
+}
+
 export function App() {
   const game = useGameRuntime()
   const { state } = game
@@ -286,6 +301,8 @@ export function App() {
 
         <LiveRegion phase={state.phase} state={state} />
       </div>
+
+      <AppFooter />
     </main>
   )
 }

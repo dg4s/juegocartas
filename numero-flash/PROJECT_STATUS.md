@@ -1,16 +1,16 @@
 # NÚMERO FLASH — Estado del Proyecto
 
-**Última actualización:** 2026-09-06 19:37 (DEC-052 GO + commit/push GitHub)
+**Última actualización:** 2026-09-06 20:30 (paquete NAS generado)
 
 ## Fase actual
 
 | Campo | Valor |
 |-------|-------|
 | **Fase** | 3 — Implementación local **cerrada** + IDLE alineado al mock v0 |
-| **Estado general** | Fase 3 publicada en GitHub (`main`). NAS/Caddy/DuckDNS sin cambios. |
+| **Estado general** | Fase 3 en GitHub. Footer dg4s + paquete NAS incluidos en este commit. NAS/Caddy/DuckDNS sin cambios. |
 | **Código** | `C:\Dev\juegocartas\numero-flash\` |
 | **Producto** | **NÚMERO FLASH** · slug `numero-flash` (DEC-051) |
-| **Último commit en GitHub** | Este commit (2026-09-06 19:37) |
+| **Último commit en GitHub** | `9004058` (2026-09-06 19:37) |
 | **Rama / remote** | `main` · `origin` = `https://github.com/dg4s/juegocartas.git` |
 
 ## Registro de avance
@@ -30,8 +30,10 @@
 | 2026-09-06 19:23 | Registro de avance en docs de continuidad | Completada |
 | 2026-09-06 19:29 | IDLE: escena local `public/home-scene.png` + botones reales visibles (mock v0) | Completada |
 | 2026-09-06 19:35 | DEC-052 — rótulo UI **GO** (estado técnico GO_SIGNAL sin cambio) | Completada |
-| 2026-09-06 19:37 | Commit/push Fase 3 + DEC-051/052 → GitHub | Completada |
-| — | Reconstruir Docker/TAR para publicar IDLE en `:8095` | Pendiente |
+| 2026-09-06 19:37 | Commit/push Fase 3 + DEC-051/052 → GitHub (`9004058`) | Completada |
+| 2026-09-06 19:59 | Footer global: dg4s.site + © 2026 dg4s | Completada (local; sin commit) |
+| 2026-09-06 20:30 | Rebuild Docker + TAR + carpeta `nas-deploy/` para TerraMaster | Completada |
+| — | Commit/push footer + paquete NAS | Este commit |
 | — | Carga en TerraMaster / Caddy / DuckDNS | Pendiente; no tocar |
 
 ## Verificación local (2026-09-06 19:25)
@@ -49,7 +51,7 @@
 | PWA manifest | `name` / `short_name`: NÚMERO FLASH |
 | Imagen TAR | `numero-flash-image.tar` (~21 MB) |
 | TAR anterior | `monteo-numero-image.tar` eliminado |
-| Working tree | `numero-flash/` sin commitear; `MONTEO-NUMERO/` eliminado en working tree |
+| Working tree | Footer en `App.tsx` / `global.css` **sin commitear** (post-`9004058`) |
 | Flujo de partida | RETO: INICIAR → COUNTDOWN → EXPOSURE → RECONSTRUCT → VERIFY → ROUND_RESULT → DETENER → IDLE |
 | Clics inicio | Niveles OK; INICIAR/SONIDO/PANTALLA COMPLETA OK (landscape requiere scroll) |
 | Accesibilidad EXPOSURE | Número `aria-hidden`; `aria-live` vacío (DEC-040) |
@@ -70,6 +72,10 @@ Solo apariencia de la pantalla de inicio. Lógica de juego **sin cambios**.
 
 El fold landscape de INICIAR queda **resuelto en Vite** (controles anclados al borde inferior).
 
+## Footer (2026-09-06 19:59)
+
+Pie fijo en todas las pantallas: «Sistema desarrollado por dg4s.site | © 2026 dg4s. Todos los derechos reservados». Enlace a https://dg4s.site. Solo UI; sin cambio de mecánica.
+
 ## Mecánica — sin cambios
 
 Estados, reducer, universo 648, 5 rondas, cancelación, timers, audio, PWA y accesibilidad **sin alteración** en el cambio de IDLE.
@@ -88,8 +94,8 @@ Flujo comprobado en el contenedor (RETO): niveles, SONIDO ON/OFF, INICIAR → CO
 
 ## Siguiente paso
 
-1. Rebuild Docker + `numero-flash-image.tar` si se quiere IDLE/GO en `:8095`.
-2. Transferencia manual del TAR al NAS (post-auditoría).
+1. Transferencia manual del TAR al NAS (`nas-deploy/`).
+2. Pruebas en TerraMaster.
 
 ## Restricciones activas
 

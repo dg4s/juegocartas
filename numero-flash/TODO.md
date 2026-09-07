@@ -1,6 +1,6 @@
 # NÚMERO FLASH — Tareas Pendientes
 
-**Última actualización:** 2026-09-06 19:37 (DEC-052 + commit/push)
+**Última actualización:** 2026-09-06 19:59 (footer dg4s.site)
 
 ## Fase 0 — Preparación (completada)
 
@@ -72,7 +72,7 @@
 - [x] Botones reales visibles (no `opacity: 0` sobre PNG remoto)
 - [x] INICIAR → COUNTDOWN (lógica intacta)
 - [x] Vitest 19/19; clics verificados en Vite `:5173`
-- [ ] Rebuild Docker / TAR para `:8095` (pendiente de autorización)
+- [x] Rebuild Docker / TAR para `:8095` (2026-09-06 20:30)
 
 ## Fase 3g — DEC-052 GO (2026-09-06 19:35)
 
@@ -86,8 +86,16 @@
 - [x] Commit de `numero-flash/` (sustituye `MONTEO-NUMERO/`) — autorizado por usuario
 - [x] Push a `origin/main` — autorizado por usuario
 
-## Fase 5 — NAS (pendiente; no tocar ahora)
+## Fase 3h — Footer dg4s (2026-09-06 19:59)
 
+- [x] Pie global: «Sistema desarrollado por dg4s.site | © 2026 dg4s. Todos los derechos reservados»
+- [x] Enlace https://dg4s.site; visible en IDLE, juego y resultados
+- [x] Commit/push footer + paquete NAS (autorizado por usuario)
+- [x] Rebuild Docker / TAR para `:8095` (2026-09-06 20:30)
+
+## Fase 5 — NAS (artefactos listos; transferencia manual)
+
+- [x] Generar `numero-flash-image.tar` + `nas-deploy/` (compose, instrucciones)
 - [ ] Transferencia manual y `docker load`
 - [ ] Pruebas en TerraMaster
 - [ ] Docs de instalación y rollback

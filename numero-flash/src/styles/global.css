@@ -193,9 +193,43 @@ button:disabled {
   padding:
     env(safe-area-inset-top, 0)
     max(20px, env(safe-area-inset-right, 0))
-    clamp(18px, 3.5vh, 40px)
+    calc(clamp(18px, 3.5vh, 40px) + 1.75rem + env(safe-area-inset-bottom, 0))
     max(20px, env(safe-area-inset-left, 0));
   pointer-events: none;
+}
+
+.app-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  pointer-events: none;
+  padding: 0.35rem 0.75rem calc(0.35rem + env(safe-area-inset-bottom, 0));
+  text-align: center;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: clamp(0.62rem, 1.4vw, 0.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: rgba(210, 225, 255, 0.58);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.app-footer a {
+  pointer-events: auto;
+  color: rgba(190, 220, 255, 0.9);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+.scene--idle .app-footer p {
+  color: rgba(220, 235, 255, 0.72);
 }
 
 .mode-picker {
@@ -342,7 +376,7 @@ button:disabled {
 
   .idle-screen__ui {
     gap: 10px;
-    padding-bottom: max(15px, env(safe-area-inset-bottom, 0));
+    padding-bottom: calc(15px + 1.75rem + env(safe-area-inset-bottom, 0));
   }
 
   .mode-picker {
@@ -405,7 +439,7 @@ button:disabled {
 
   .idle-screen__ui {
     gap: 8px;
-    padding-bottom: 10px;
+    padding-bottom: calc(10px + 1.5rem + env(safe-area-inset-bottom, 0));
   }
 
   .mode-card {
@@ -1452,6 +1486,7 @@ button:disabled {
   position: relative;
   z-index: 20;
   pointer-events: auto;
+  margin-bottom: 1.75rem;
 }
 
 .btn-stop {
@@ -1549,7 +1584,7 @@ button:disabled {
   align-items: center;
   gap: clamp(1rem, 3vh, 1.5rem);
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 3rem;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.06);
   border: 2px solid rgba(255, 255, 255, 0.1);

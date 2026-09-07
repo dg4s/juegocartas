@@ -1,0 +1,7 @@
+services:
+  numero-flash:
+    image: numero-flash:latest
+    container_name: numero-flash
+    ports:
+      - "8095:8080"
+    restart: unless-stopped

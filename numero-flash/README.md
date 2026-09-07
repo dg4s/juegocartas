@@ -4,7 +4,7 @@ PWA educativa de cartas: el adulto opera la app; el niño reconstruye un número
 
 ## Estado
 
-**Fase 3 — Implementación local cerrada** (2026-09-06). Publicado en GitHub. IDLE mock v0; señal **GO** (DEC-052). Ver `npm run dev` o Docker `:8095` tras rebuild.
+**Fase 3 — Implementación local cerrada** (2026-09-06). Paquete NAS en `nas-deploy/`; TAR local (`*.tar` excluido de Git).
 
 > Nombre histórico del proyecto: MONTEO NÚMERO (DEC-001). Identidad operativa vigente: **NÚMERO FLASH** (DEC-051).
 
@@ -67,6 +67,4 @@ docker compose up --build
 
 ## Pendiente
 
-- Rebuild Docker/TAR para reflejar IDLE/GO en `:8095`
-- Consulta GPT: copy decorativo vs DEC-025
-- Transferencia manual de `numero-flash-image.tar` al NAS (Caddy/DuckDNS sin cambios)
+- Transferencia manual de `numero-flash-image.tar` al NAS (generar con `docker save`; ver `nas-deploy/`)
