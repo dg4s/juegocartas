@@ -1,16 +1,16 @@
 # NÚMERO FLASH — Estado del Proyecto
 
-**Última actualización:** 2026-09-07 (corrección docs paquete NAS)
+**Última actualización:** 2026-09-07 (iconos PWA NF + TAR NAS)
 
 ## Fase actual
 
 | Campo | Valor |
 |-------|-------|
 | **Fase** | 3 — Implementación local **cerrada** + IDLE alineado al mock v0 |
-| **Estado general** | Fase 3 en GitHub. Paquete NAS corregido (transferencia manual, sin build en NAS). Caddy/DuckDNS sin cambios. |
+| **Estado general** | Fase 3 en GitHub. Iconos PWA **NF** (sustituyen MN). TAR NAS actualizado en local. Caddy/DuckDNS sin cambios. |
 | **Código** | `C:\Dev\juegocartas\numero-flash\` |
 | **Producto** | **NÚMERO FLASH** · slug `numero-flash` (DEC-051) |
-| **Último commit en GitHub** | `8be8a08` (2026-09-07; docs NAS en `673d8b9`) |
+| **Último commit en GitHub** | `cabedac` (2026-09-07) |
 | **Rama / remote** | `main` · `origin` = `https://github.com/dg4s/juegocartas.git` |
 
 ## Registro de avance
@@ -34,7 +34,8 @@
 | 2026-09-06 19:59 | Footer global: dg4s.site + © 2026 dg4s | Completada (local; sin commit) |
 | 2026-09-06 20:30 | Rebuild Docker + TAR + carpeta `nas-deploy/` para TerraMaster | Completada |
 | 2026-09-06 20:35 | Commit/push footer + paquete NAS (`3b3a70f`) | Completada |
-| 2026-09-07 | Corrección docs `nas-deploy/` (`673d8b9`) + registro continuidad (`8be8a08`) | Completada |
+| 2026-09-07 | Corrección docs `nas-deploy/` (`673d8b9`) + registro continuidad | Completada |
+| 2026-09-07 | Iconos PWA **NF** + commit/push (`cabedac`) | Completada |
 | — | Transferencia manual TAR + compose al TerraMaster | Pendiente |
 
 ## Verificación local (2026-09-06 19:25)
@@ -105,6 +106,24 @@ Flujo comprobado en el contenedor (RETO): niveles, SONIDO ON/OFF, INICIAR → CO
 | `README.md` | Resumen; despliegue vs. fase futura Caddy/DuckDNS |
 
 Flujo: PC Windows → interfaz de archivos TerraMaster → importar TAR → levantar compose. **No** SSH para subir archivos. **No** build ni código fuente en el NAS.
+
+TAR local regenerado **2026-09-07** con iconos NF (gitignored; copiar manualmente a `nas-deploy/`).
+
+## Iconos PWA (2026-09-07)
+
+Sustituido resto **MN** (MONTEO NÚMERO) por identidad **NF** (NÚMERO FLASH):
+
+| Elemento | Valor |
+|----------|-------|
+| Fondo | `#081a3a` |
+| N | `#f8fbff` |
+| F | `#ffd033` |
+| Assets | `favicon.svg`, `icon-192.png`, `icon-512.png` |
+| Manifest / meta | `theme_color` / `background_color` → `#081a3a` |
+
+Verificación: `npm run build` OK · contenedor `:8095` healthy · TAR ~23 MB en `nas-deploy/`.
+
+**Nota Windows PWA:** desinstalar acceso directo antiguo e reinstalar para refrescar icono en caché.
 
 ## Siguiente paso
 

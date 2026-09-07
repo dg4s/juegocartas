@@ -1,6 +1,6 @@
 # NÚMERO FLASH — Tareas Pendientes
 
-**Última actualización:** 2026-09-07 (corrección docs paquete NAS)
+**Última actualización:** 2026-09-07 (iconos PWA NF)
 
 ## Fase 0 — Preparación (completada)
 
@@ -92,6 +92,14 @@
 - [x] Enlace https://dg4s.site; visible en IDLE, juego y resultados
 - [x] Commit/push footer + paquete NAS (autorizado por usuario)
 - [x] Rebuild Docker / TAR para `:8095` (2026-09-06 20:30)
+
+## Fase 3i — Iconos PWA NF (2026-09-07)
+
+- [x] `favicon.svg`, `icon-192.png`, `icon-512.png` — NF (fondo `#081a3a`, N `#f8fbff`, F `#ffd033`)
+- [x] `vite.config.ts` + `index.html` — theme/background `#081a3a`
+- [x] `npm run build` OK
+- [x] Rebuild Docker + TAR → `nas-deploy/numero-flash-image.tar` (~23 MB)
+- [x] Commit/push (autorizado por usuario)
 
 ## Fase 5 — NAS (artefactos listos; transferencia manual)
 

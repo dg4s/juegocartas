@@ -4,7 +4,7 @@ PWA educativa de cartas: el adulto opera la app; el niño reconstruye un número
 
 ## Estado
 
-**Fase 3 — Implementación local cerrada** (2026-09-06). GitHub `8be8a08`. Paquete NAS en `nas-deploy/` (transferencia manual TerraMaster; TAR local, gitignored).
+**Fase 3 — Implementación local cerrada**. Iconos PWA **NF** (#081a3a / N #f8fbff / F #ffd033). Paquete NAS en `nas-deploy/`; TAR local gitignored.
 
 > Nombre histórico del proyecto: MONTEO NÚMERO (DEC-001). Identidad operativa vigente: **NÚMERO FLASH** (DEC-051).
 
@@ -67,5 +67,6 @@ docker compose up --build
 
 ## Pendiente
 
-- Transferencia manual de `nas-deploy/` al TerraMaster (TAR + compose; ver `INSTALACION-NAS.md`)
+- Transferencia manual de `nas-deploy/` al TerraMaster (TAR con iconos NF; ver `INSTALACION-NAS.md`)
+- Reinstalar PWA en Windows si persiste icono MN en caché
 - Caddy/DuckDNS (fase posterior, vía SSH)
